@@ -1,4 +1,4 @@
-package com.chalkboard.data.models
+package com.chalkboard.data
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
@@ -8,8 +8,7 @@ import androidx.compose.ui.graphics.Path
  */
 data class DrawStroke(
     val path: Path = Path(),
-    val color: Color = Color.Black,
+    val color: Color = Color.Companion.Black,
     val strokeWidth: Float = 6f,
     val isEraser: Boolean = false
 )
-
